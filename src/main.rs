@@ -12,8 +12,6 @@ fn main() {
         process::exit(1);
     });
 
-    println!("Searching for query {}, in file {}.", config.query, config.filename);
-
     if let Err(e) = greprs::run(config) {
         println!("Application error: {}", e);
 
